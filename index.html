@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="#" class="logo">Rizki</a>
+      <nav class="navbar">
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+      <div class="home-content">
+        <div class="info">
+          <h1>Hi, I'm Rizki Nugraha</h1>
+          <h3>Web Developer</h3>
+          <p>
+            I am an informatics engineering student at the University of Kuningan, I have a great interest in the world of technology and I want to become a reliable web developer.
+          </p>
+          <div class="btn-box">
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-content">
+        <div class="image-wrapper">
+          <img src="./assets/FOTO-removebg.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          Hello, my name is Rizki Nugraha. I am a student of Informatics Engineering at the University of Kuningan. Currently, I am pursuing education to deepen my knowledge and
+          skills in the field of information technology, especially in the development of software, networks, and computer systems. I have a great interest in digital technology
+          and innovation, and I am always eager to learn new things and develop useful solutions in this digital age.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project" id="project">
+      <h1 class="judul">Project</h1>
+      <div class="container">
+        <div class="project-content">
+          <img src="./assets/projek1.jpeg" alt="" />
+          <div class="item">
+            <h1>Mini Games</h1>
+            <p>An automatically designed paper scissor stone mini-game using HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn-card">Lihat</a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <img src="./assets/projek2.jpeg" alt="" />
+          <div class="item">
+            <h1>Travel</h1>
+            <p>Travel website for booking vacation tickets in Indonesia online is built using HTML, CSS, and PHP.</p>
+            <a href="#" class="btn-card">Lihat</a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <img src="./assets/projek3.jpeg" alt="" />
+          <div class="item">
+            <h1>Edu Nation</h1>
+            <p>Landing page for the fictional Edu-Nation online course service. Built with HTML5, CSS3, and JavaScript.</p>
+            <a href="#" class="btn-card">Lihat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-us">
+          <h2>Contact Us</h2>
+          <div class="contact-con">
+            <div class="contact-description">
+              <p>If you have any questions or would like to contact us, please fill out the form below.</p>
+              <ul>
+                <li><strong>Email:</strong> rizkinugraha@gmail.com</li>
+                <li><strong>Phone:</strong> +62 234 567 890</li>
+                <li><strong>Address:</strong> Kuningan Jawa Barat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="submit_contact.php" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/banic.thailand.18"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/rizky_nugraha14/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/Rizki00268331"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com/@PiciQii"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="footerNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <p>Copyright &copy; 2024</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
